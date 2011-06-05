@@ -1,0 +1,19 @@
+{
+  "name" : "Tweets +1",
+  "version" : "1.0",
+  "description" : "Adds a +1 button to tweets on twitter.com",
+  "content_scripts" : [
+    {
+      "matches" : [
+        "http://twitter.com/*",
+        "https://twitter.com/*"
+      ],
+      "js" : ["contentscript.js"],
+      "run_at" : "document_idle",
+      "all_frames" : false
+    }
+  ],
+  "icons" : {
+    "128" : "tweets+1.png"
+  }
+}
