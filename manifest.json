@@ -1,6 +1,6 @@
 {
   "name" : "Tweets +1",
-  "version" : "1.0",
+  "version" : "1.1",
   "description" : "Adds a +1 button to tweets on twitter.com",
   "content_scripts" : [
     {
