@@ -27,7 +27,7 @@ var addPlusOne = function(tweet) {
     plusone.innerHTML = '<g:plusone size="small" count="true" href="' + href + '"></g:plusone>';
     
     var plusOneDest = tweet.querySelector('div.extra-icons');
-    plusOneDest.appendChild(plusone);
+    plusOneDest.insertBefore(plusone, plusOneDest.firstChild);
 }
 
 var findTweets = function(event) {
