@@ -1,0 +1,8 @@
+span.plusone {
+    display: none;
+}
+
+div.tweet:hover  span.plusone {
+    display: inline;
+}
+

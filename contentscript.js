@@ -42,6 +42,12 @@ var findTweets = function(event) {
     }
 }
 
+var plusOneStyles = document.createElement('link');
+plusOneStyles.setAttribute('href', chrome.extension.getURL('styles.css'));
+plusOneStyles.setAttribute('rel', 'stylesheet');
+plusOneStyles.setAttribute('type', 'text/css');
+document.head.appendChild(plusOneStyles);
+
 var plusOneScript = document.createElement('script');
 plusOneScript.setAttribute("src", "https://apis.google.com/js/plusone.js");
 plusOneScript.textContent = '{"parsetags": "explicit"}';
